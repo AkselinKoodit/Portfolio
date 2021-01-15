@@ -1,13 +1,19 @@
 body {
-  background-color: cyan;
+  background-color: snow;
 }
 
 p {
-  color: green;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.darkgrey {
+  color: grey;
 }
 
 .blue {
   color: blue;
+}
+.grey {
+  color: lightgray;
 }
 /* this is a comment in CSS */
 
