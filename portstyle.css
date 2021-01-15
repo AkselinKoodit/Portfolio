@@ -1,0 +1,28 @@
+body {
+  background-color: cyan;
+}
+
+p {
+  color: green;
+}
+
+.blue {
+  color: blue;
+}
+/* this is a comment in CSS */
+
+/* let's try to use ctrl+' */
+
+/* this is how block comment looks (shift+alt+a), so it's the same put doesn't wrap around, you have to write after */
+
+.red {
+  color: red;
+}
+.yellow {
+  color: yellow;
+  font-family: "Times New Roman", Times, serif;
+}
+#important {
+  font-size: 30px;
+  color: lightcoral;
+}
