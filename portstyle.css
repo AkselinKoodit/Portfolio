@@ -1,4 +1,5 @@
 body {
+  margin-left: 50px;
   background-color: whitesmoke;
 }
 
@@ -16,14 +17,20 @@ p {
 .blue {
   color: blue;
 }
-img {
+.img {
+  display: block;
+  margin-left: 220px;
+  margin-right: auto;
   width: 250px;
   height: 260px;
-  border: 2px solid gray;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  border: 4px solid;
+  color: rgba(243, 178, 57, 0.973);
 }
+hr {
+  border: 0.5px solid;
+  color: rgba(243, 178, 57, 0.973);
+}
+
 .grey {
   color: lightgray;
 }
