@@ -1,53 +1,104 @@
 body {
-  margin-left: 50px;
-  background-color: whitesmoke;
+  margin-left: 20%;
+  margin-right: 20%;
+  font-family: roboto, sans-serif;
+  background-color: white;
+  display: block;
+}
+h1 {
+  color: #0fa3b1;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  font-size: 36px;
 }
 
 h2 {
-  font-family: arial;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  color: #ff9b42;
+}
+h3 {
+  color: #0fa3b1;
 }
 
 p {
-  font-family: arial;
-}
-.darkgrey {
-  color: grey;
+  font-family: "Roboto", sans-serif;
 }
 
-.blue {
-  color: blue;
-}
-.img {
+img {
   display: block;
   margin-left: 220px;
   margin-right: auto;
   width: 250px;
   height: 260px;
   border: 4px solid;
-  color: rgba(243, 178, 57, 0.973);
+  color: #ff9b42;
 }
 hr {
   border: 1px solid;
-  color: rgba(243, 178, 57, 0.973);
+  color: #ff9b42;
+}
+.img {
+  float: left;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+.centered {
+  text-align: center;
+  margin-bottom: 50px;
 }
 
-.grey {
-  color: lightgray;
-}
-/* this is a comment in CSS */
+/* .menu {
+  list-style: none;
+  display: inline;
+  text-align: center;
+} */
+.container {
+  text-align: center;
 
-/* let's try to use ctrl+' */
-
-/* this is how block comment looks (shift+alt+a), so it's the same put doesn't wrap around, you have to write after */
-
-.red {
-  color: red;
+  /* max-width: 1200px;
+  min-width: 200px; */
+  background-color: #d9e5d6, 80%;
+  font-family: roboto, sans-serif;
+  margin: 0 auto;
+  padding: 10px;
+  display: inline;
+  border: #0fa3b1, solid, 5px;
 }
-.yellow {
-  color: yellow;
-  font-family: "Times New Roman", Times, serif;
+li {
+  list-style: none;
+  display: inline;
 }
-#important {
-  font-size: 30px;
-  color: lightcoral;
+#present {
+  clear: both;
+}
+
+.rickroll {
+  display: list-item;
+  list-style: circle;
+}
+.background {
+  margin-left: 20px;
+}
+html {
+  scroll-behavior: smooth;
+}
+.blacknwhite {
+  float: right;
+}
+table {
+  font-family: "Roboto", sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+td,
+th {
+  border: 2px solid #0fa3b1;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #ff9b42;
 }
