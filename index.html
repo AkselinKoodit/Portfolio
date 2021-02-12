@@ -7,56 +7,33 @@
     <link rel="stylesheet" href="portstyle.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+    <script src="https://kit.fontawesome.com/bd8b207ea3.js" crossorigin="anonymous"></script>
+    
+    <link rel="icon" type="image/png" href="/favicon.png">
+
 </head>
 <body> 
     
     <header>
-        <div class="container">
-            <div>
-                <p id="logo">A</p><p id="logoX">X</p><p id="logo">U</p>
-            </div>
-            <nav>
-                
-                <ul class=menu>
-                    <li><a href="https://github.com/AkselinKoodit", target="_blank">My GitHub</a></li>
-                    <li><a href="#background">Past</a></li>
-                    <li><a href="#present">Present</a></li>
-                    <li><a href="index.html" target="_blank">Home</a> </li>
-                    <li><a href="contact.html">Contacts</a></li>
-                    <li><a href="#contactme">Contact me</a> </li>
-                </ul>
-            </nav>
-
-        </div>
-        <h1>Welcome to my portfolio!</h1>
-        
-
-    </header>
-   
-    
-</br>
-
-
-        <!-- <h1>Welcome to my very first portfolio project!</h1> -->
-
+        <div id='logo'>A<p id='logoX'>X</p>U</div>
+        <nav>
+            <ul class=menu>
+                <li><a href="https://github.com/AkselinKoodit" target="_blank"><i class="fab fa-github"></i> My GitHub   </a></li>
+                <li><a href="#background"><i class="fab fa-accessible-icon"></i> Past   </a></li>
+                <li><a href="#present"><i class="fab fa-house"></i> Present   </a></li>
+                <li><a href="index.html" target="_blank" ><i class="fas fa-home"></i> Home   </a> </li>
+                <li><a href="contact.html"><i class="fas fa-address-card"></i> Contacts   </a></li>
+                <li><a href="#contactme"><i class="far fa-envelope"></i> Contact me</a> </li>
+            </ul>
+        </nav>
     </header>
     <main>
-        <div class="margin">
-            <em>
-                <h3>Here's a list of things Akseli, as an employee, is never gonna do:</h3>
-                
-                <ul>
-                    <li class='rickroll'>give you up</li>
-                    <li class='rickroll'>let you down</li>
-                    <li class='rickroll'>run around and desert you</li>
-                    <li class='rickroll'>say goodbye</li>
-                    <li class='rickroll'>make you cry</li>
-                    <li class='rickroll'>tell a lie and hurt you</li>
-                </ul>
-            </em>
-            
-            
-        </div>
+        <section id= "hero-banner">
+            <h1>Welcome to my portfolio!</h1>
+        </section>
+
             <hr>
             <h2 class="margin">Past</h2>
             <section class="past">
@@ -64,21 +41,27 @@
                 <div class="box">
                    <img src="https://source.unsplash.com/ebHCU8n7G38" alt="eweq">
                    <h3>something</h3>
-                  <p>I was born in the city of Kuopio. In 2008 I moved to Jyväskylä to study tourism. I graduated with Bachelor's degree in Hospitality Management in 2012s. After that I have worked in tourism abroad and in Helsinki.<br> I have always been interested in programming and started to seriously get into it in the beginning of 2020.</p>
-                   <a href="sas">link</a>
+                  <p>Splice the main brace draft crack Jennys tea cup Corsair to go on account spanker Shiver me timbers brig Davy Jones' Locker parrel smartly log draught crow's nest bilged on her anchor walk the plank maroon no prey</p>
+                   <a href="sas">link</a>                   
+                    <progress id="file" value="80" max="100"> 80% </progress>
+
                 </div>
+
                 <div class="box">
                    <img src="Kuopio.jpg" alt="Picture of Kuopio">
                    <h3>something</h3>
-                  <p>Lorem ipsum dolor sit amet, recusandae similique dolore natus perferendis voluptatibus atque, cumque dignissimos quibusdam voluptatum?</p>
+                  <p>Spicy jalapeno bacon ipsum dolor amet t-bone frankfurter venison ground round labore shank, dolore turkey irure hamburger tail beef ribs. Cillum fugiat buffalo, swine tail chislic tri-tip aliqua sausage prosciutto deserunt. </p>
                    <a href="sas">link</a>
+                   <label for="file">Customer service</label>
+<progress id="file" value="50" max="100"> 32% </progress>
                 </div>
-                <div class="box">
+                <div class="box ">
                    <img src="Kuopio.jpg" alt="pic of Kuopio">
                    <h3>something</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa nisi facere consequatur ipsa? Maxime aspernatur sed voluptas? Unde aspernatur recusandae similique dolore natus perferendis voluptatibus atque, cumque dignissimos quibusdam voluptatum?</p>
-                  <p>
+                  <p>Tackle gunwalls killick Davy Jones' Locker galleon Letter of Marque long clothes lookout yo-ho-ho long boat poop deck belaying pin American Main sloop ballast.</p>
                     Read more <a href="contact.html" id="underline">here</a>.
+                    <label for="file">Java level:</label>
+<progress id="file" value="32" max="100"> 32% </progress>
                 </p>
                 </div>
 
@@ -91,15 +74,20 @@
             <h2 id="present">Present</h2>
             <img src="blackwhite.jpg" alt="mustavalkoinen" class="image" id="blacknwhite">
             
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus repellendus ipsa molestiae possimus, officiis facere quia odio amet natus asperiores, minima delectus reprehenderit tenetur neque, fugiat aperiam dicta dolorum! Quia dolorum est sint quasi eaque ut doloremque animi facilis perferendis itaque voluptatum placeat voluptas earum fuga, quas nam minus nostrum voluptate iusto ipsum, officia enim repellendus. Omnis sit saepe dicta porro a! Quis, voluptatibus impedit necessitatibus officiis non soluta explicabo ex. Ab rem laborum minima laudantium ipsum nostrum dolores aliquam impedit harum pariatur nihil quisquam, eveniet, assumenda architecto quo? Itaque, suscipit ratione ea obcaecati ex non magni repellendus unde, nobis reiciendis perferendis nam saepe voluptates eum fugit, maxime fuga voluptatum? Harum perspiciatis laboriosam possimus magnam reprehenderit fugiat provident enim libero! Aperiam at ipsa labore, consequatur necessitatibus facere accusamus est, atque, repudiandae officia ratione possimus consequuntur. Aperiam doloribus nulla, exercitationem autem repellendus dolores, pariatur laboriosam sit soluta ipsum perspiciatis dolorum ratione, natus fuga? Placeat, dolore omnis. Nisi, ex numquam non nulla incidunt iste magnam magni architecto unde, molestiae quos repellat aliquam aperiam laborum fugit vero. Tempore ad, placeat vel maxime minus exercitationem, voluptate error tempora ut, eveniet quas laboriosam consequatur architecto expedita quam? Inventore, officia cumque! Voluptate explicabo repellat exercitationem tempore aliquam. Quasi, iusto, quo iste fugiat nesciunt id assumenda debitis, vel aliquam exercitationem laudantium ullam ratione natus voluptas quos explicabo. Fuga alias voluptatem magnam? Animi modi repellendus quod porro sapiente voluptatum, consectetur vero velit dicta repudiandae, corporis, veritatis dolores labore! Veritatis repellendus a nobis incidunt amet laudantium odit et, unde porro natus aliquid quia similique dolorem eius beatae alias optio dolor est sapiente cumque consectetur. Iusto doloremque tempora quasi temporibus quibusdam magni repudiandae quo culpa nihil natus est non fuga voluptates, dolore eaque nemo rem. Perferendis voluptatem distinctio voluptas ea, incidunt velit reiciendis saepe soluta aspernatur explicabo molestiae ratione nostrum?</p>
+            <p>Salami chuck tri-tip, strip steak pig tail frankfurter short ribs beef. Picanha pig frankfurter strip steak chicken. Hamburger kevin shankle short ribs, ball tip chicken meatloaf tongue drumstick swine bresaola corned beef burgdoggen. Meatball buffalo t-bone tenderloin, pork belly short ribs ribeye jowl landjaeger. Pork chop corned beef chuck tail.
+
+            Bresaola pig ground round buffalo alcatra jerky swine shoulder porchetta, pork chop meatloaf tenderloin shank venison biltong. Tongue brisket turkey alcatra boudin. Bresaola pig shank t-bone pork loin, cow brisket landjaeger porchetta turkey picanha andouille. Frankfurter t-bone pastrami biltong turkey. Bacon ham hock meatball pork andouille jowl corned beef cupim venison sirloin buffalo beef ribs salami tri-tip. </p>
             
         </section>
             <hr>
         <section class="margin">
             <h2 id="skillset">Future </h2>
+            <img src='https://source.unsplash.com/QbLTpyf3QoU' alt="city" id='xp'>
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam consectetur dolorem recusandae quia quibusdam accusantium corporis tempore pariatur voluptate. Dolor, totam dolores. Tenetur repellendus suscipit excepturi porro nihil aut possimus, neque perferendis architecto eligendi repudiandae, sed, accusantium ad veniam pariatur! Pariatur, non ipsa voluptatibus laborum rerum, totam consequuntur odit tenetur sapiente facilis maiores sint quae ex quibusdam voluptates incidunt deleniti repellendus quia harum voluptatem aliquid numquam. Nemo incidunt eveniet dolores, fuga nisi sapiente molestiae nam quo maxime aut voluptates ex eos possimus architecto praesentium, reiciendis eius, harum alias optio? Accusamus, nobis vel tempora excepturi voluptatum ut non sit voluptatibus ex, dolor delectus perspiciatis voluptates sunt cumque ipsam nesciunt odit doloremque, quia vitae reprehenderit! Voluptates iusto fuga aliquam harum accusamus iste in a rem eos, est eveniet. Veniam, voluptate saepe ratione voluptatem aliquid atque suscipit excepturi commodi fugiat libero possimus nemo dolorum aut sed fugit? Ex harum corporis natus at tempora.
+                Etsy asymmetrical yr you probably haven't heard of them shoreditch everyday carry small batch messenger bag, affogato mustache gochujang. Migas seitan lumbersexual photo booth lyft schlitz, actually kickstarter echo park deep v forage. Seitan meh shabby chic, tofu yr chicharrones williamsburg. Schlitz church-key brunch kinfolk sriracha, typewriter 90's crucifix man bun tousled forage before they sold out ethical aesthetic. Austin meh deep v listicle kickstarter biodiesel drinking vinegar copper mug fingerstache chartreuse unicorn chia health goth tumblr.
             </p>
+
+            
         </section>
         <hr>
     </main>
@@ -132,8 +120,10 @@
                 </thead>           
             </table>
         </div>
+        <button onclick="topFunction()" id="toTopBtn" title="Go to top">To the top</button>
         <div>
-            <p class="centered">Copyright @ Aksunmetkut Ry 2021</p>
+
+            <p class="copyright">Copyright @ Aksunmetkut Ry 2021</p>
         </div>
     </footer>
     <script src="main.js"></script>

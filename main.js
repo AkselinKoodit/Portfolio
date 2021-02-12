@@ -4,7 +4,7 @@
 console.log("Hi! Watcha doing here?");
 const body = document.querySelector("body");
 
-let header = document.querySelector(".container");
+let header = document.querySelector("header");
 let otsikko1 = document.querySelector("h1");
 let fixed = header.offsetTop;
 
@@ -21,12 +21,27 @@ const stickIt = (event) => {
 
 window.addEventListener("scroll", stickIt);
 
-// let body = document.querySelector("body");
-// let header = document.querySelector(".container");
+//Get the button:
+mybutton = document.getElementById("toTopBtn");
 
-// const containerFixed = () => {
-//   event.preventDefault();
-//   (".container");
-// };
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function () {
+  scrollFunction();
+};
 
-// body.addEventListener("scroll", containerFixed);
+function scrollFunction() {
+  if (
+    document.body.scrollTop > 1500 ||
+    document.documentElement.scrollTop > 1500
+  ) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
