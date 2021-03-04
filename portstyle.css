@@ -29,15 +29,16 @@ header {
 #hero-banner {
   height: 70vh;
   width: 100%;
-  background: url("watermarkPNG.png") no-repeat fixed center center/cover;
+  background: url("watermarkPNG.png") no-repeat fixed bottom center/cover;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   position: relative;
 }
 h1 {
   text-align: center;
   color: #d99559;
+  margin-top: 10vh;
   font-family: "Roboto Slab", serif;
   font-size: 2.25rem;
 }
@@ -95,7 +96,7 @@ nav ul li :hover {
   background-color: white;
   opacity: 0.5;
   font-size: 60%;
-  transition: all 0.5;
+  transition: 0.5s;
   z-index: 10;
   transition-duration: 0.5s;
 }
@@ -185,9 +186,6 @@ a:link {
   margin-right: 15vw;
   margin-bottom: 1rem;
 }
-.skills :nth-child(even) {
-  background-color: #d9e5d6;
-}
 .icon {
   font-size: 60px;
 }
@@ -217,6 +215,14 @@ img {
   padding: 1rem;
   box-shadow: 5px -5px 10px rgba(51, 51, 51, 0.26);
 }
+.box:nth-child(even) {
+  background-color: #555;
+}
+
+/* 
+h1.icon:nth-child(even) {
+  background-color: #555;
+} */
 button {
   border-radius: 3px;
   padding: 10px;
@@ -255,11 +261,35 @@ textarea {
 #myBtn:hover {
   background-color: #555; /* Add a dark-grey background on hover */
 }
-progress {
-  color: #0fa3b1;
-  background-color: #d99559;
-  border: #0fa3b1 solid 1px;
+progress[value] {
+  -webkit-appearance: none;
+  appearance: none;
+  max-width: 20vh;
+  height: 20px;
+}
+progress[value]::-webkit-progress-bar {
+  background-color: #eee;
   border-radius: 2px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0, 0, 25) inset;
+}
+
+progress[value]::-webkit-progress-value {
+  background-image: -webkit-linear-gradient(
+      -45deg,
+      transparent 33%,
+      rgba(0, 0, 0, 0.1) 33%,
+      rgba(0, 0, 0, 0.1) 66%,
+      transparent 66%
+    ),
+    -webkit-linear-gradient(top, rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25)),
+    -webkit-linear-gradient(left, #0fa3b1, #d99559);
+
+  border-radius: 2px;
+  background-size: 35px 20px, 100% 100%, 100% 100%;
+}
+.skillLevel {
+  margin-top: 1rem;
+  text-align: center;
 }
 
 @media (max-width: 768px) {
