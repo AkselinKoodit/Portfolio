@@ -4,6 +4,7 @@
   --text-color: #808383;
   --highlight-color: #d99559;
   --secondary-color: #79b4d9;
+  --secondary-background-color: #d9e5d6;
 }
 * {
   margin: 0px;
@@ -434,17 +435,23 @@ progress[value]::-webkit-progress-value {
   }
 
   /********menu button***********/
-
+  nav ul {
+    display: none;
+    width: 100%;
+    position: absolute;
+    left: 0;
+  }
   #menuBtn {
     display: block;
   }
   nav.responsive ul {
     display: block;
-    background-color: white;
+    background-color: var(--secondary-background-color);
     width: 100%;
     position: absolute;
     top: 100px;
     text-align: right;
+    z-index: 99;
   }
   nav ul li {
     display: block;
@@ -452,5 +459,14 @@ progress[value]::-webkit-progress-value {
   nav ul li a {
     display: block;
     padding: 1rem 2rem;
+  }
+  /* #gallery {
+    display: block;
+  }
+  .container {
+    display: block;
+  } */
+  .gallery-grid {
+    display: block;
   }
 }
