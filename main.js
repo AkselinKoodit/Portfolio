@@ -45,3 +45,16 @@ function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
+
+/***Let's get that mobile menu working: */
+let menuBtn = document.getElementById("menuBtn");
+let nav = document.querySelector("nav");
+let links = document.querySelectorAll("nav ul li a");
+
+const showMenuFunction = () => {
+  for (let i = 0; i < links.length; i++) {
+    links[i].addEventListener("click", showMenuFunction);
+  }
+  nav.classList.toggle("responsive");
+};
+menuBtn.addEventListener("click", showMenuFunction);
