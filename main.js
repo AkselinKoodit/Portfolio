@@ -1,7 +1,7 @@
 // window.onscroll = function () {
 //   stickIt();
 // };
-console.log("Hi! Watcha doing here?");
+console.log("Hi there!");
 const body = document.querySelector("body");
 
 let header = document.querySelector("header");

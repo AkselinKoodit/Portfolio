@@ -1,3 +1,10 @@
+:root {
+  --light-color: white;
+  --font: Roboto, sans-serif;
+  --text-color: #808383;
+  --highlight-color: #d99559;
+  --secondary-color: #79b4d9;
+}
 * {
   margin: 0px;
   box-sizing: border-box;
@@ -5,7 +12,7 @@
 body {
   margin-left: 0%;
   margin-right: 0%;
-  font-family: "Roboto", sans-serif;
+  font-family: var(--font);
   background-color: white;
   display: block;
   line-height: 1.6;
@@ -46,11 +53,12 @@ h1 {
 h2 {
   font-family: "Roboto", sans-serif;
   font-size: 1.25rem;
-  color: #d99559;
+  color: var(--highlight-color);
   margin-top: 2.5rem;
 }
 h3 {
-  color: #79b4d9;
+  color: var(--secondary-color);
+  text-align: center;
 }
 
 .image {
@@ -61,8 +69,9 @@ h3 {
   height: 26vh;
   border: 2px solid;
   color: #79b4d9;
-  float: right;
+  float: left;
 }
+
 hr {
   border: 1px solid;
   color: #d99559;
@@ -127,6 +136,10 @@ th {
 }
 td {
   padding-left: 1px;
+  text-align: center;
+}
+.alignRight {
+  text-align: right;
 }
 .contact {
   margin: 0 auto;
@@ -142,6 +155,7 @@ footer {
 }
 #blacknwhite {
   margin-left: 1rem;
+  float: right;
 }
 #logo {
   font-family: "Monoton", cursive;
@@ -163,6 +177,24 @@ footer {
 }
 a:link {
   text-decoration: none;
+  color: #808383;
+}
+a:visited {
+  text-decoration: none;
+  color: #808383;
+}
+a:hover {
+  text-decoration: none;
+  color: #808383;
+  font-weight: 600;
+  font-size: 17px;
+}
+a:active {
+  text-decoration: none;
+  color: #808383;
+}
+i {
+  margin-left: 10px;
 }
 
 #underline {
@@ -181,13 +213,15 @@ a:link {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
+
   margin-left: 15vw;
   margin-right: 15vw;
   margin-bottom: 1rem;
 }
 .icon {
   font-size: 60px;
+  margin: 0;
+  text-align: center;
 }
 img {
   width: 100%;
@@ -213,10 +247,10 @@ img {
   border: 1px solid #808383;
   margin: 1rem;
   padding: 1rem;
-  box-shadow: 5px -5px 10px rgba(51, 51, 51, 0.26);
+  box-shadow: 0px 0px 10px rgba(51, 51, 51, 0.26);
 }
 .box:nth-child(even) {
-  background-color: #555;
+  background-color: rgba(85, 85, 85, 0.158);
 }
 
 /* 
@@ -224,21 +258,24 @@ h1.icon:nth-child(even) {
   background-color: #555;
 } */
 button {
+  border: none;
   border-radius: 3px;
   padding: 10px;
   background-color: #d99559;
   cursor: pointer;
   color: white;
+  transition: all 0.5s;
 }
 button:hover {
-  box-shadow: #333 5px 5px 5px;
-  transition-duration: 0.3s;
+  box-shadow: #333 0px 0px 5px;
+  font-size: 14px;
+  transition-timing-function: ease-out;
 }
 input {
-  border-radius: 3px;
+  width: 200px;
 }
 textarea {
-  border-radius: 3px;
+  width: 200px;
 }
 #toTopBtn {
   display: none; /*Hidden by default*/
@@ -257,10 +294,12 @@ textarea {
   border-radius: 3px; /* Rounded corners */
   font-size: 18px; /* Increase font size */
   transition-duration: 0.3s;
+  opacity: 0.6;
 }
-#myBtn:hover {
-  background-color: #555; /* Add a dark-grey background on hover */
+#toTopBtn:hover {
+  font-size: 19px;
 }
+
 progress[value] {
   -webkit-appearance: none;
   appearance: none;
@@ -282,7 +321,7 @@ progress[value]::-webkit-progress-value {
       transparent 66%
     ),
     -webkit-linear-gradient(top, rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25)),
-    -webkit-linear-gradient(left, #0fa3b1, #d99559);
+    -webkit-linear-gradient(left, var(--secondary-color), var(--highlight-color));
 
   border-radius: 2px;
   background-size: 35px 20px, 100% 100%, 100% 100%;
@@ -292,6 +331,57 @@ progress[value]::-webkit-progress-value {
   text-align: center;
 }
 
+/****************Gallery****************/
+
+.gallery-grid {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(6, 150px);
+  grid-template-rows: repeat(6, 150px);
+  grid-gap: 1.5rem;
+  grid-template-areas:
+    "a a b b c c"
+    "a a d d c c"
+    "e h h h c c"
+    "f h h h i i"
+    "g h h h i i";
+  margin: 1.5rem;
+}
+
+.grid-item-1 {
+  grid-area: a;
+}
+.grid-item-2 {
+  grid-area: b;
+}
+.grid-item-3 {
+  grid-area: c;
+}
+.grid-item-4 {
+  grid-area: d;
+}
+.grid-item-5 {
+  grid-area: e;
+}
+.grid-item-6 {
+  grid-area: f;
+}
+.grid-item-7 {
+  grid-area: g;
+}
+.grid-item-8 {
+  grid-area: h;
+}
+.grid-item-9 {
+  grid-area: i;
+}
+.grid-item {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/******mobile versions*******/
 @media (max-width: 768px) {
   body {
     background-color: tomato;
