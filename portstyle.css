@@ -164,7 +164,6 @@ footer {
 #logo {
   font-family: "Monoton", cursive;
   font-size: 1em;
-
   display: inline-block;
   vertical-align: middle;
   justify-content: flex-start;
@@ -217,7 +216,7 @@ i {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-
+  justify-content: space-between;
   margin-left: 15vw;
   margin-right: 15vw;
   margin-bottom: 1rem;
@@ -433,6 +432,9 @@ progress[value]::-webkit-progress-value {
   .past {
     justify-content: center;
   }
+  .skills {
+    justify-content: center;
+  }
 
   /********menu button***********/
   nav ul {
@@ -460,12 +462,6 @@ progress[value]::-webkit-progress-value {
     display: block;
     padding: 1rem 2rem;
   }
-  /* #gallery {
-    display: block;
-  }
-  .container {
-    display: block;
-  } */
   .gallery-grid {
     display: block;
   }
