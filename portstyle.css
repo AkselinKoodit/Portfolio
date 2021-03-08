@@ -1,5 +1,5 @@
 :root {
-  --text-color: #808383;
+  --text-color: #5e5c5c;
   --highlight-color: #d99559;
   --secondary-color: #79b4d9;
   --secondary-background-color: #d9e5d6;
@@ -16,14 +16,14 @@ body {
   background-color: white;
   display: block;
   line-height: 1.6;
-  color: #808383;
+  color: var(--text-color);
 }
 
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 1rem;
+  /* padding-top: 1rem; */
   padding-left: 1rem;
   padding-right: 1rem;
   background-color: #d9e5d6;
@@ -47,7 +47,7 @@ header {
 }
 h1 {
   text-align: center;
-  color: #d99559;
+  color: var(--highlight-color);
   margin-top: 10vh;
   font-family: "Roboto Slab", serif;
   font-size: 2.25rem;
@@ -71,13 +71,13 @@ h3 {
   width: 25vh;
   height: 26vh;
   border: 2px solid;
-  color: #79b4d9;
+  color: var(--secondary-color);
   float: left;
 }
 
 hr {
   border: 1px solid;
-  color: #d99559;
+  color: var(--highlight-color);
   clear: both;
 }
 
@@ -93,11 +93,11 @@ nav ul {
 }
 nav ul li {
   display: inline-block;
-  color: #808383;
+  color: var(--text-color);
 }
 nav ul li :hover {
   display: inline-block;
-  color: #808383;
+  color: var(--text-color);
   text-decoration: underline;
 }
 .fixed {
@@ -148,7 +148,7 @@ td {
   margin: 0 auto;
 }
 footer {
-  background-color: #d9e5d6;
+  background-color: var(--secondary-background-color);
   padding-top: 20px;
 }
 .margin {
@@ -180,22 +180,23 @@ footer {
 }
 a:link {
   text-decoration: none;
-  color: #808383;
+  color: var(--text-color);
 }
 a:visited {
   text-decoration: none;
-  color: #808383;
+  color: var(--text-color);
 }
 a:hover {
   text-decoration: none;
-  color: #808383;
+  color: var(--text-color);
   /* font-weight: 600; */
   font-size: 18px;
   transition: 0.3s;
 }
 a:active {
   text-decoration: none;
-  color: #808383;
+  color: var(--text-color);
+  font-weight: 900;
 }
 i {
   margin-left: 10px;
@@ -302,6 +303,7 @@ textarea {
 }
 #toTopBtn:hover {
   font-size: 19px;
+  opacity: 1;
 }
 
 progress[value] {
