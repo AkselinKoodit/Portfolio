@@ -23,7 +23,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* padding-top: 1rem; */
+  padding-top: 1rem;
   padding-left: 1rem;
   padding-right: 1rem;
   background-color: #d9e5d6;
@@ -124,6 +124,9 @@ table {
   font-family: "Roboto", sans-serif;
   border-collapse: collapse;
   width: 50vh;
+  margin: 0 auto;
+  margin-top: 5rem;
+  margin-bottom: 12rem;
 }
 
 th {
@@ -132,10 +135,13 @@ th {
   padding: 8px;
 }
 .contacts {
-  border: #d99559 1px solid;
+  border: var(--secondary-color) 1px solid; 
+  margin: 0 auto;
 }
+
 .contacts td:nth-child(even) {
   background-color: #d99559;
+  color: var(--secondary-background-color);
 }
 td {
   padding-left: 1px;
@@ -278,9 +284,11 @@ button:hover {
 }
 input {
   width: 200px;
+  font-family: var(--font);
 }
 textarea {
   width: 200px;
+  font-family: var(--font);
 }
 #toTopBtn {
   display: none; /*Hidden by default*/

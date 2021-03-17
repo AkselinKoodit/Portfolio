@@ -57,7 +57,6 @@
             <section class="past">
                 <div class="section">
                    <img src="Kuopio.jpg" alt="Picture of Kuopio" class = "image">
-                   <h3>something</h3>
                   <p>Spicy jalapeno bacon ipsum dolor amet t-bone frankfurter venison ground round labore shank, dolore turkey irure hamburger tail beef ribs. Cillum fugiat buffalo, swine tail chislic tri-tip aliqua sausage prosciutto deserunt. </p>
                 </div>
     
@@ -150,16 +149,17 @@
                 </thead>
                 <tbody> 
                     <tr>
-                        <td class = "alignRight">Your name </td>
-                        <td><label for="Input your name here:"></label><input type="text" name="name" id="name"></td>
+                        <td class = "alignRight" aria-placeholder="your name">
+                            Your name </td>
+                        <td><label for="Input your name here:"></label><input type="text" name="name" id="name" placeholder="John Doe"></td>
                     </tr>
                     <tr>
-                        <td class = "alignRight">Email</td>
-                        <td><label for="Input your email here:"></label><input type="email" name="email" id="email"></td>
+                        <td class = "alignRight" aria-placeholder="email">Email</td>
+                        <td><label for="Input your email here:"></label><input type="email" placeholder="example@business.fi" name="email" id="email"></td>
                     </tr>
                     <tr>
-                        <td class = "alignRight">Message</td>
-                        <td><label for="area for writing a message"></label><textarea role="message area" name="Feedback" id="message" cols="20" rows="5"></textarea></td>
+                        <td class = "alignRight" aria-placeholder="message"> Message</td>
+                        <td><label for="area for writing a message"></label><textarea role="message area" name="Feedback" placeholder="Your message here..." id="message" cols="20" rows="5"></textarea></td>
                     </tr>
                 </tbody>
                 <thead>
@@ -170,11 +170,10 @@
             </table>
         </div>
         <button onclick="topFunction()" id="toTopBtn" title="Go to top">To the top</button>
-        <div>
-           <p class="copyright">
+        <div class="copyright">
                 <a href = "https://github.com/AkselinKoodit" target="_blank"><i class="fab fa-github"></i></a>
                 <a href="https://www.linkedin.com/in/akseli-miettinen-145950157/" ><i class="fab fa-linkedin"></i></a>
-                Copyright @ Aksunmetkut Ry 2021</p>
+                Copyright @ Aksunmetkut Ry 2021
         </div>
     </footer>
     <script src="main.js"></script>

@@ -3,32 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacts</title>
+    <title>Portfolio</title>
     <link rel="stylesheet" href="portstyle.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+    <script src="https://kit.fontawesome.com/bd8b207ea3.js" crossorigin="anonymous"></script>
+    
+    <link rel="icon" type="image/png" href="favicon.png">
 
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
 </head>
 <body>
     <header>
-            <nav>
-        <ul class=menu>
-            <li><a href="https://github.com/AkselinKoodit">My GitHub</a></li>
-            <li class=menu><a href="#background">Past</a></li>
-            <li><a href="#present">Present</a></li>
-            <li><a href="index.html" target="_blank">Home</a> </li>
-            <li><a href="contact.html">Contacts</a></li>
-        </ul>
-        </nav>
+        <a href="index.html" target="_blank"> 
+            <div id='logo'>A<p id='logoX'>X</p>U</div>
+        </a>
+        <nav>
+            <a href="#1212" id="menuBtn">
+                <span class="material-icons"> menu </span>
+            </a>
+            <ul class=menu>
 
-    </div>
-      
-</header>
-    <br>
-    <br>
-    <hr>
-    <br>
+                <li><a href="index.html"><i class="fas fa-home"></i> Home   </a> </li>
+                <li><a href="index.html#background"><i class="fas fa-chevron-left"></i> Past   </a></li>
+                <li><a href="./index.html#present"><i class="fas fa-chevron-down"></i> Present   </a></li>
+                <li><a href="./index.html#future" target="_blank">  
+                <i class="fas fa-chevron-right"></i> Future </a></li>
+                <li><a href="#contactme"><i class="far fa-envelope"></i> Contact me</a> </li>
+                <li><a href="gallery.html" target="_blank"><i class="far fa-images"></i> Gallery</a> </li>
+            </ul>
+        </nav>
+    </header>
     <main>
+        <h1>Contacts</h1>
         <div>
-             <table>
+             <table id = "contactTable">
                  <tr class="contacts">
                      <td class="contacts">Name</td>
                      <td class="contacts">Title</td>
@@ -36,8 +50,8 @@
                      <td class="contacts">Email</td>
                  </tr>
                  <tr class="contacts">
-                     <td> class="contacts"Akseli Miettinen</td>
-                     <td class="contacts">Ylipäälikkö</td>
+                     <td class="contacts">Akseli Miettinen</td>
+                     <td class="contacts">Ylipäällikkö</td>
                      <td class="contacts">0451234567</td>
                      <td class="contacts">akseli.miettinen@edu.bc.fi</td>
                  </tr class="contacts">
@@ -55,7 +69,44 @@
                  </tr>
              </table>
         </div>
+        <hr>
     </main>
-
+    <footer>
+            <table class="contact">
+                <thead>
+                    <tr>
+                        <td colspan="2">Contact me</td>
+                    </tr>
+                </thead>
+                <tbody> 
+                    <tr>
+                        <td class = "alignRight" aria-placeholder="your name">
+                            Your name </td>
+                        <td><label for="Input your name here:"></label><input type="text" name="name" id="name" placeholder="John Doe"></td>
+                    </tr>
+                    <tr>
+                        <td class = "alignRight" aria-placeholder="email">Email</td>
+                        <td><label for="Input your email here:"></label><input type="email" placeholder="example@business.fi" name="email" id="email"></td>
+                    </tr>
+                    <tr>
+                        <td class = "alignRight" aria-placeholder="message"> Message</td>
+                        <td><label for="area for writing a message"></label><textarea role="message area" name="Feedback" placeholder="Your message here..." id="message" cols="20" rows="5"></textarea></td>
+                    </tr>
+                </tbody>
+                <thead>
+                    <tr>
+                        <td colspan="2"><button>Submit!</button></td>
+                    </tr>
+                </thead>           
+            </table>
+        </div>
+        <button onclick="topFunction()" id="toTopBtn" title="Go to top">To the top</button>
+        <div class="copyright">
+                <a href = "https://github.com/AkselinKoodit" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/akseli-miettinen-145950157/" ><i class="fab fa-linkedin"></i></a>
+                Copyright @ Aksunmetkut Ry 2021
+        </div>
+    </footer>
+    <script src="main.js"></script>
 </body>
 </html>
