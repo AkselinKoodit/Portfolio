@@ -3,7 +3,7 @@
   --highlight-color: #d99559;
   --secondary-color: #79b4d9;
   --secondary-background-color: #d9e5d6;
-  --font: Roboto, sans-serif;
+  --font: 'Roboto', sans-serif;
 }
 * {
   margin: 0px;
@@ -28,7 +28,6 @@ header {
   padding-right: 1rem;
   background-color: #d9e5d6;
   border-bottom: 1px solid #808383;
-  /* position: relative; */
   top: 0;
   z-index: 2;
   width: 100%;
@@ -120,6 +119,7 @@ html {
   scroll-behavior: smooth;
 }
 
+/***Contacts page styling***********/
 table {
   font-family: "Roboto", sans-serif;
   border-collapse: collapse;
@@ -147,26 +147,16 @@ td {
   padding-left: 1px;
   text-align: center;
 }
+
 .alignRight {
   text-align: right;
 }
 .contact {
   margin: 0 auto;
 }
-footer {
-  background-color: var(--secondary-background-color);
-  padding-top: 20px;
-}
-.margin {
-  margin-left: 15vw;
-  margin-right: 15vw;
-  margin-bottom: 1rem;
-}
 
-#blacknwhite {
-  margin-left: 1rem;
-  float: right;
-}
+/***********header styling*************/
+
 #logo {
   font-family: "Monoton", cursive;
   font-size: 1em;
@@ -210,6 +200,13 @@ i {
 
 #underline {
   text-decoration: underline;
+}
+
+/********main styling*********/
+
+#blacknwhite {
+  margin-left: 1rem;
+  float: right;
 }
 .past {
   display: flex;
@@ -264,10 +261,50 @@ img {
   background-color: rgba(85, 85, 85, 0.158);
 }
 
-/* 
-h1.icon:nth-child(even) {
-  background-color: #555;
-} */
+
+progress[value] {
+  -webkit-appearance: none;
+  appearance: none;
+  max-width: 20vh;
+  height: 20px;
+}
+progress[value]::-webkit-progress-bar {
+  background-color: #eee;
+  border-radius: 2px;
+  box-shadow: 0 2px 5px #333;
+}
+
+progress[value]::-webkit-progress-value {
+  background-image: -webkit-linear-gradient(
+      -45deg,
+      transparent 33%,
+      rgba(0, 0, 0, 0.1) 33%,
+      rgba(0, 0, 0, 0.1) 66%,
+      transparent 66%
+    ),
+    -webkit-linear-gradient(top, rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25)),
+    -webkit-linear-gradient(left, var(--secondary-color), var(--highlight-color));
+
+  border-radius: 2px;
+  background-size: 35px 20px, 100% 100%, 100% 100%;
+}
+.skillLevel {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+
+/*******footer styling*********/
+footer {
+  background-color: var(--secondary-background-color);
+  padding-top: 20px;
+}
+
+.margin {
+  margin-left: 15vw;
+  margin-right: 15vw;
+  margin-bottom: 1rem;
+}
 button {
   border: none;
   border-radius: 3px;
@@ -312,37 +349,6 @@ textarea {
 #toTopBtn:hover {
   font-size: 19px;
   opacity: 1;
-}
-
-progress[value] {
-  -webkit-appearance: none;
-  appearance: none;
-  max-width: 20vh;
-  height: 20px;
-}
-progress[value]::-webkit-progress-bar {
-  background-color: #eee;
-  border-radius: 2px;
-  box-shadow: 0 2px 5px #333;
-}
-
-progress[value]::-webkit-progress-value {
-  background-image: -webkit-linear-gradient(
-      -45deg,
-      transparent 33%,
-      rgba(0, 0, 0, 0.1) 33%,
-      rgba(0, 0, 0, 0.1) 66%,
-      transparent 66%
-    ),
-    -webkit-linear-gradient(top, rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25)),
-    -webkit-linear-gradient(left, var(--secondary-color), var(--highlight-color));
-
-  border-radius: 2px;
-  background-size: 35px 20px, 100% 100%, 100% 100%;
-}
-.skillLevel {
-  margin-top: 1rem;
-  text-align: center;
 }
 
 /****************Gallery****************/
@@ -405,12 +411,11 @@ progress[value]::-webkit-progress-value {
 /******mobile versions*******/
 @media (max-width: 768px) {
   body {
-    background-color: tomato;
+
   }
 }
 @media (max-width: 576px) {
   body {
-    background-color: teal;
   }
   section {
     flex-direction: column;
@@ -418,8 +423,6 @@ progress[value]::-webkit-progress-value {
 
   .image {
     display: block;
-    /* margin-bottom: 20px;
-    margin-left: ; */
     margin-left: 1rem;
     float: left;
     border: 4px solid;
