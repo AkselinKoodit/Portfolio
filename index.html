@@ -100,7 +100,7 @@
                <h2 class='icon'><i class="fas fa-users"></i></h2>
               <p>Spicy jalapeno bacon ipsum dolor amet t-bone frankfurter venison ground round labore shank </p>
               <div class = "skillLevel"> 
-                  <label for="file">Customer service </label>
+                  <label for="customer service">Customer service </label>
                   <progress max="10" value="7"> 7 </progress>
                 </div>
             </div>
@@ -110,7 +110,7 @@
                <h2 class='icon'><i class="fab fa-js-square"></i></h2>
               <p>Tackle gunwalls killick Davy Jones' Locker galleon Letter of Marque long clothes lookout yo-ho-ho long boat poop deck belaying pin American Main sloop ballast.</p>
                 <div class = "skillLevel">
-                    <label for="file">Javascript level:</label>
+                    <label for="javascript">Javascript</label>
                     <progress value="3" max="10"> 3 </progress>
                 </div>
             </div>
@@ -120,7 +120,7 @@
                 <h1 class='icon'><i class="fab fa-html5"></i></h1>
                <p>I'm baby gochujang four dollar toast seitan, man bun air plant post-ironic leggings venmo bespoke yuccie. Kinfolk schlitz iPhone YOLO distillery plaid. Church-key slow-carb unicorn keytar. PBR&B direct trade church-key, truffaut fam live-edge XOXO.</p>
                 <div class = "skillLevel">
-                    <label for="file">HTML5 level:</label>
+                    <label for="html-level">HTML level:</label>
                     <progress value="3" max="10"> 3 </progress>
                 </div>
             </div>
@@ -130,7 +130,7 @@
                 <h1 class='icon'><i class="fas fa-hand-holding-usd"></i></h1>
                <p>I'm baby gochujang four dollar toast seitan, man bun air plant post-ironic leggings venmo bespoke yuccie. Kinfolk schlitz iPhone YOLO distillery plaid. Church-key slow-carb unicorn keytar. PBR&B direct trade church-key, truffaut fam live-edge XOXO.</p>
                <div class = "skillLevel">
-                    <label for="file">Finance level:</label>
+                    <label for="finance">Finance</label>
                     <progress value="3" max="10"> 3 </progress>
                 </div>
              </div>
@@ -141,33 +141,13 @@
     </main>
     <footer>
         <div id="contactme">
-            <table class="contact">
-                <thead>
-                    <tr>
-                        <td colspan="2">Contact me</td>
-                    </tr>
-                </thead>
-                <tbody> 
-                    <tr>
-                        <td class = "alignRight" aria-placeholder="your name">
-                            Your name </td>
-                        <td><label for="Input your name here:"></label><input type="text" name="name" id="name" placeholder="John Doe"></td>
-                    </tr>
-                    <tr>
-                        <td class = "alignRight" aria-placeholder="email">Email</td>
-                        <td><label for="Input your email here:"></label><input type="email" placeholder="example@business.fi" name="email" id="email"></td>
-                    </tr>
-                    <tr>
-                        <td class = "alignRight" aria-placeholder="message"> Message</td>
-                        <td><label for="area for writing a message"></label><textarea role="message area" name="Feedback" placeholder="Your message here..." id="message" cols="20" rows="5"></textarea></td>
-                    </tr>
-                </tbody>
-                <thead>
-                    <tr>
-                        <td colspan="2"><button>Submit!</button></td>
-                    </tr>
-                </thead>           
-            </table>
+            <form method="POST" action="//public.bc.fi/s2100140/form/contact.php" id="form">
+                <input type="email" name="email" id="email" placeholder="Your email">
+                <input type="email" name="receiver" id="receiver" placeholder="Receivers email (Optional)">
+                <input type="text" placeholder="Message subject">
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Your message here"></textarea>
+                <button type="submit">Send email</button>
+            </form>
         </div>
         <button onclick="topFunction()" id="toTopBtn" title="Go to top">To the top</button>
         <div class="copyright">

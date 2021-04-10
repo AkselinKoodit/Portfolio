@@ -4,7 +4,7 @@
 
 In the project I get familiar with different html and css styling tools. I also use little vanilla js to make the site more easy to use.
 
-In the future I can use this showcase my skills and tell a possible employer about myself.
+In the future I can use the portfolio showcase my skills and tell a possible employer about myself.
 
 ### Contributions:
 

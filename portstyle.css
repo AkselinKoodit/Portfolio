@@ -3,7 +3,7 @@
   --highlight-color: #d99559;
   --secondary-color: #79b4d9;
   --secondary-background-color: #d9e5d6;
-  --font: 'Roboto', sans-serif;
+  --font: "Roboto", "Arial", sans-serif;
 }
 * {
   margin: 0px;
@@ -135,7 +135,7 @@ th {
   padding: 8px;
 }
 .contacts {
-  border: var(--secondary-color) 1px solid; 
+  border: var(--secondary-color) 1px solid;
   margin: 0 auto;
 }
 
@@ -261,7 +261,6 @@ img {
   background-color: rgba(85, 85, 85, 0.158);
 }
 
-
 progress[value] {
   -webkit-appearance: none;
   appearance: none;
@@ -293,7 +292,6 @@ progress[value]::-webkit-progress-value {
   text-align: center;
 }
 
-
 /*******footer styling*********/
 footer {
   background-color: var(--secondary-background-color);
@@ -322,10 +320,22 @@ button:hover {
 input {
   width: 200px;
   font-family: var(--font);
+  margin: 5px;
+  font-family: "Roboto", sans-serif;
 }
 textarea {
+  font-family: "Roboto", sans-serif;
   width: 200px;
+  margin: 5px;
   font-family: var(--font);
+}
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem;
+  margin: 1rem;
 }
 #toTopBtn {
   display: none; /*Hidden by default*/
@@ -411,7 +421,6 @@ textarea {
 /******mobile versions*******/
 @media (max-width: 768px) {
   body {
-
   }
 }
 @media (max-width: 576px) {
