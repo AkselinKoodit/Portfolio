@@ -73,6 +73,15 @@ h3 {
   color: var(--secondary-color);
   float: left;
 }
+.image-kpo {
+  display: block;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  /* width: 25vh; */
+  border: 2px solid;
+  color: var(--secondary-color);
+  float: inline-end;
+}
 
 hr {
   border: 1px solid;
