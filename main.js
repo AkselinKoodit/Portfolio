@@ -1,9 +1,4 @@
-// window.onscroll = function () {
-//   stickIt();
-// };
-console.log("Hi there!");
 const body = document.querySelector("body");
-
 let header = document.querySelector("header");
 let otsikko1 = document.querySelector("h1");
 let fixed = header.offsetTop;

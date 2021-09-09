@@ -240,6 +240,11 @@ i {
   margin: 0;
   text-align: center;
 }
+.doubleicon {
+  font-size: 50px;
+  margin: 0;
+  text-align: center;
+}
 img {
   width: 100%;
 }
