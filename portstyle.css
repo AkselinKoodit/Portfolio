@@ -65,7 +65,6 @@ h3 {
 
 .image {
   display: block;
-  margin-right: 20px;
   margin-bottom: 20px;
   width: 25vh;
   height: 26vh;
@@ -75,9 +74,8 @@ h3 {
 }
 .image-kpo {
   display: block;
-  margin-right: 20px;
-  margin-bottom: 20px;
-  /* width: 25vh; */
+  margin-top: 1rem;
+  /* width: 600px; */
   border: 2px solid;
   color: var(--secondary-color);
   float: inline-end;
@@ -201,14 +199,6 @@ a:visited {
   color: var(--text-color);
 }
 
-a:hover {
-  text-decoration: none;
-  color: var(--text-color);
-  /* font-weight: 600; */
-  /* font-size: 120%; */
-  transition: ease-in-out 0.2s;
-  transform: scale(1.2);
-}
 a:active {
   text-decoration: none;
   color: var(--text-color);
@@ -242,6 +232,14 @@ a:active {
   margin-right: 15vw;
   margin-bottom: 1rem;
 }
+a {
+  display: inline-block;
+  transition: ease-in-out 0.1s;
+}
+a:hover {
+  transform: scale(1.1);
+  /* color: var(--secondary-color); */
+}
 .icon {
   font-size: 60px;
   margin: 0;
@@ -265,14 +263,13 @@ img {
 }
 .box {
   background-color: #d9e5d6;
-  width: 30vh;
+  width: 35vh;
   border: 1px solid #808383;
   margin: 1rem;
   padding: 1rem;
 }
 .box:hover {
   background-color: #d9e5d6;
-  width: 30vh;
   border: 1px solid #808383;
   margin: 1rem;
   padding: 1rem;
@@ -385,18 +382,17 @@ form {
 }
 .links {
   margin-right: 50px;
-  transition: ease-in-out 0.2s;
 }
 
 .icon-link {
   font-size: 1.5rem;
-  transition: ease-in-out 0.2s;
+  transition: ease-in-out 0.1s;
   margin-right: 10px;
 }
-.icon-link:hover {
+/* .icon-link:hover {
   font-size: 2rem;
   margin-right: 10px;
-}
+} */
 
 .fab.fa-linkedin {
   margin-right: 20px;
