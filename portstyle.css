@@ -102,11 +102,20 @@ nav ul {
 nav ul li {
   display: inline-block;
   color: var(--text-color);
+  margin-right: 40px;
+}
+nav ul li a {
+  transition: ease-in-out 0.2s;
 }
 nav ul li :hover {
   display: inline-block;
   color: var(--text-color);
   text-decoration: underline;
+}
+nav ul li i:hover {
+  display: inline-block;
+  color: var(--text-color);
+  text-decoration: none;
 }
 .fixed {
   position: sticky;
@@ -191,28 +200,26 @@ a:visited {
   text-decoration: none;
   color: var(--text-color);
 }
+
 a:hover {
   text-decoration: none;
   color: var(--text-color);
   /* font-weight: 600; */
-  font-size: 18px;
-  transition: 0.3s;
+  /* font-size: 120%; */
+  transition: ease-in-out 0.2s;
+  transform: scale(1.2);
 }
 a:active {
   text-decoration: none;
   color: var(--text-color);
   font-weight: 900;
 }
-i {
-  margin-left: 10px;
-}
-
-#underline {
-  text-decoration: underline;
-}
 
 /********main styling*********/
 
+#future {
+  margin-bottom: 1rem;
+}
 #blacknwhite {
   margin-left: 1rem;
   float: right;
@@ -324,7 +331,7 @@ button {
   background-color: #d99559;
   cursor: pointer;
   color: white;
-  transition: all 0.5s;
+  transition: ease-in-out all 0.2s;
 }
 button:hover {
   box-shadow: #333 0px 0px 5px;
@@ -332,15 +339,17 @@ button:hover {
   transition-timing-function: ease-out;
 }
 input {
-  width: 200px;
+  width: 300px;
   font-family: var(--font);
   margin: 5px;
+  padding: 5px;
   font-family: "Roboto", sans-serif;
 }
 textarea {
   font-family: "Roboto", sans-serif;
-  width: 200px;
+  width: 300px;
   margin: 5px;
+  padding: 5px;
   font-family: var(--font);
 }
 form {
@@ -373,6 +382,24 @@ form {
 #toTopBtn:hover {
   font-size: 19px;
   opacity: 1;
+}
+.links {
+  margin-right: 50px;
+  transition: ease-in-out 0.2s;
+}
+
+.icon-link {
+  font-size: 1.5rem;
+  transition: ease-in-out 0.2s;
+  margin-right: 10px;
+}
+.icon-link:hover {
+  font-size: 2rem;
+  margin-right: 10px;
+}
+
+.fab.fa-linkedin {
+  margin-right: 20px;
 }
 
 /****************Gallery****************/
@@ -498,6 +525,7 @@ form {
   }
   nav ul li {
     display: block;
+    margin-right: 0;
   }
   nav ul li a {
     display: block;
