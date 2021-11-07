@@ -75,10 +75,12 @@ h3 {
 .image-kpo {
   display: block;
   margin-top: 1rem;
-  /* width: 600px; */
   border: 2px solid;
   color: var(--secondary-color);
   float: inline-end;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
 }
 
 hr {
@@ -456,13 +458,7 @@ form {
 }
 
 /******mobile versions*******/
-@media (max-width: 768px) {
-  body {
-  }
-}
 @media (max-width: 576px) {
-  body {
-  }
   section {
     flex-direction: column;
   }
